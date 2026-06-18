@@ -1,0 +1,328 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d0d1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'VT323', monospace;
+            padding: 20px;
+            background-image:
+                linear-gradient(45deg, #18182b 1px, transparent 1px),
+                linear-gradient(-45deg, #18182b 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .cv {
+            max-width: 1000px;
+            width: 100%;
+            background-color: #1a1a2e;
+            padding: 30px;
+            border: 4px solid #4a4a6a;
+            box-shadow:
+                6px 6px 0 #2a2a4a,
+                12px 12px 0 rgba(0, 0, 0, 0.6);
+            image-rendering: pixelated;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Press Start 2P', monospace;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #f0e6d0;
+            text-shadow: 3px 3px 0 #e94560;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-family: 'VT323', monospace;
+            font-size: 1.5rem;
+            color: #b0b0d0;
+            border-bottom: 3px solid #4a4a6a;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            color: #f0e6d0;
+            background: #2a2a4a;
+            display: inline-block;
+            padding: 6px 14px;
+            border: 2px solid #4a4a6a;
+            box-shadow: 3px 3px 0 #0f0f1a;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 0.9rem;
+            color: #e0d6c0;
+            margin-top: 10px;
+            margin-bottom: 4px;
+        }
+
+        p, li, .text {
+            font-family: 'VT323', monospace;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #d0d0e0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 750px) {
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            h1 { font-size: 1.4rem; }
+            .subtitle { font-size: 1.2rem; flex-direction: column; gap: 4px; }
+        }
+
+        .card {
+            background: #16162e;
+            border: 3px solid #3a3a5a;
+            padding: 18px 16px;
+            margin-bottom: 20px;
+            box-shadow:
+                4px 4px 0 #2a2a4a,
+                8px 8px 0 rgba(0, 0, 0, 0.3);
+            transition: all 0.1s step-end;
+        }
+
+        .card:hover {
+            border-color: #e94560;
+            box-shadow:
+                4px 4px 0 #e94560,
+                8px 8px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        /* Foto de perfil interactiva */
+        .profile-photo-container {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border: 4px solid #4a4a6a;
+            box-shadow: 4px 4px 0 #0f0f1a;
+            image-rendering: pixelated;
+            margin-right: 14px;
+            vertical-align: middle;
+            background-color: #1a1a3a;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .profile-photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .profile-photo-container .placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.5rem;
+            color: #8a8aaa;
+            text-align: center;
+            padding: 8px;
+            line-height: 1.4;
+            background-color: #1a1a3a;
+            border: none;
+        }
+
+        .profile-photo-container .placeholder span {
+            display: block;
+        }
+
+        .profile-photo-container input[type="file"] {
+            display: none;
+        }
+
+        .profile-photo-container:hover {
+            border-color: #e94560;
+            box-shadow: 4px 4px 0 #e94560;
+        }
+
+        .header-info {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* Barras de progreso pixeladas */
+        .skill-bar-container {
+            margin: 6px 0 10px 0;
+        }
+
+        .skill-bar-label {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'VT323', monospace;
+            font-size: 1.1rem;
+            color: #c0c0d0;
+            margin-bottom: 2px;
+        }
+
+        .skill-bar-track {
+            width: 100%;
+            height: 18px;
+            background: #0f0f1a;
+            border: 2px solid #4a4a6a;
+            box-shadow: inset 2px 2px 0 #0a0a14;
+            image-rendering: pixelated;
+            position: relative;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            background: #e94560;
+            border-right: 2px solid #f0e6d0;
+            box-shadow: 2px 0 0 #e94560;
+            transition: width 0.2s step-end;
+            width: 0%;
+        }
+
+        .skill-bar-fill.blue { background: #4a7ae9; border-right-color: #b0c0f0; box-shadow: 2px 0 0 #4a7ae9; }
+        .skill-bar-fill.green { background: #4ae9a0; border-right-color: #b0f0d0; box-shadow: 2px 0 0 #4ae9a0; }
+        .skill-bar-fill.orange { background: #e9a04a; border-right-color: #f0d0b0; box-shadow: 2px 0 0 #e9a04a; }
+        .skill-bar-fill.purple { background: #a04ae9; border-right-color: #d0b0f0; box-shadow: 2px 0 0 #a04ae9; }
+
+        .skill-badge {
+            display: inline-block;
+            background: #0f0f1a;
+            border: 2px solid #4a4a6a;
+            padding: 4px 12px;
+            margin: 4px 6px 4px 0;
+            font-family: 'VT323', monospace;
+            font-size: 1.1rem;
+            color: #e0e0f0;
+            box-shadow: 2px 2px 0 #2a2a4a;
+        }
+
+        .skill-badge.highlight {
+            border-color: #e94560;
+            color: #f0e6d0;
+            background: #1a1a3a;
+        }
+
+        .exp-item, .project-item {
+            margin-bottom: 16px;
+            padding-left: 14px;
+            border-left: 3px solid #4a4a6a;
+        }
+
+        .exp-item p, .project-item p {
+            margin-bottom: 2px;
+        }
+
+        .exp-item .date, .project-item .date {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.55rem;
+            color: #8a8aaa;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .project-item ul {
+            list-style: none;
+            margin-top: 4px;
+            margin-left: 6px;
+        }
+
+        .project-item li {
+            position: relative;
+            padding-left: 18px;
+            font-size: 1.05rem;
+            color: #c0c0d0;
+        }
+
+        .project-item li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #e94560;
+        }
+
+        .pixel-divider {
+            width: 100%;
+            height: 4px;
+            background: repeating-linear-gradient(90deg, #4a4a6a 0px, #4a4a6a 6px, transparent 6px, transparent 10px);
+            margin: 16px 0;
+        }
+
+        .info-line {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 6px;
+        }
+
+        .info-line .label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.6rem;
+            color: #8a8aaa;
+            min-width: 70px;
+        }
+
+        .info-line .value {
+            font-size: 1.2rem;
+            color: #e0e0f0;
+        }
+
+        .pixel-link {
+            display: inline-block;
+            padding: 6px 16px;
+            background: #2a2a4a;
+            border: 2px solid #4a4a6a;
+            color: #d0d0e0;
+            font-family: 'VT323', monospace;
+            font-size: 1.2rem;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 #0f0f1a;
+            transition: 0.1s step-end;
+        }
+
+        .pixel-link:hover {
+            background: #3a3a5a;
+            border-color: #e94560;
+            box-shadow: 3px 3px 0 #e94560;
+            color: #fff;
+        }
+
+        .text-muted { color: #8a8aaa; }
+        .mt-1 { margin-top: 8px; }
+        .mb-1 { margin-bottom: 8px; }
+
+        @media (max-width: 480px) {
+            .cv { padding: 15px; }
+            .card { padding: 12px; }
+            .skill-badge { font-size: 1rem; padding: 2px 8px; }
+            .skill-bar-track { height: 14px; }
+            .profile-photo-container { width: 60px; height: 60px; }
+        }

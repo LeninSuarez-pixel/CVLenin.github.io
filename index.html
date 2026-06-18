@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Interactivo · Lenin Suárez · Estilo Píxel</title>
+    <link rel="stylesheet" href="diseño.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cv">
+        <!-- Encabezado con foto interactiva -->
+        <header class="header-info">
+            <!-- Contenedor de foto -->
+            <label class="profile-photo-container" for="photoInput" title="Haz clic para subir tu foto">
+                <img id="profilePhoto" src="" alt="Foto de perfil" style="display:none;">
+                <div id="placeholderText" class="placeholder">
+                    <span><br>Subir<br>foto</span>
+                </div>
+                <input type="file" id="photoInput" accept="image/*">
+            </label>
+            <div>
+                <h1>Lenin Alfonso Suárez Ccama</h1>
+                <div class="subtitle">
+                    <span>▸ Programador &amp; Desarrollador Full-Stack</span>
+                    <span class="text-muted" style="font-family: 'Press Start 2P'; font-size:0.65rem;">Puno · Perú</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Perfil ampliado (primera persona) -->
+        <div class="card">
+            <h2> Sobre mí</h2>
+            <p style="font-size:1.25rem;">
+                Soy <strong>Lenin Alfonso Suárez Ccama</strong>, egresado de la carrera de <strong>Tecnología de Computación e Informática</strong> 
+                en el Instituto José Antonio Encinas de la ciudad de Puno. Actualmente curso la carrera de <strong>Ingeniería Estadística e Informática</strong>, 
+                lo que me permite combinar mi formación técnica con una sólida base en análisis de datos y métodos estadísticos. 
+                Me apasiona la programación en todas sus facetas: el <strong>desarrollo de software web</strong>, la creación de 
+                <strong>aplicaciones móviles</strong> y el diseño de soluciones escalables. 
+                Mi objetivo es orientarme profesionalmente hacia el desarrollo de software de alto impacto, trabajando como programador 
+                en equipos ágiles y multidisciplinarios. Disfruto aprender nuevas tecnologías y aplicarlas para resolver problemas reales.
+            </p>
+        </div>
+
+        <!-- Grid de dos columnas -->
+        <div class="grid">
+            <!-- Columna izquierda: Formación y Skills con gráficos -->
+            <div>
+                <!-- Formación -->
+                <div class="card">
+                    <h2>🎓 Formación</h2>
+                    <div style="margin-bottom:12px;">
+                        <h3>Instituto José Antonio Encinas</h3>
+                        <p style="font-size:1.1rem; color:#b0b0d0;">Tecnología de Computación e Informática</p>
+                        <p class="text-muted" style="font-size:1rem;">Puno · Egresado</p>
+                    </div>
+                    <div>
+                        <h3>Ingeniería Estadística e Informática</h3>
+                        <p style="font-size:1.1rem; color:#b0b0d0;">(En curso · 5to ciclo)</p>
+                        <p class="text-muted" style="font-size:1rem;">Orientación al desarrollo de software y ciencia de datos</p>
+                    </div>
+                    <div class="pixel-divider"></div>
+                    <p style="font-size:1.1rem;">
+                        <span style="color:#e94560;">▸</span> <strong>Intereses:</strong> Desarrollo web, aplicaciones móviles, arquitectura de software, análisis de datos.
+                    </p>
+                </div>
+
+                <!-- Lenguajes con barras -->
+                <div class="card">
+                    <h2> Lenguajes</h2>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>C++</span><span>92%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:92%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>C</span><span>88%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill blue" style="width:88%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>C#</span><span>85%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill green" style="width:85%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>Python</span><span>95%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill orange" style="width:95%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>R</span><span>78%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill purple" style="width:78%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>Java</span><span>82%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:82%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>JavaScript</span><span>90%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill blue" style="width:90%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>PHP</span><span>86%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill green" style="width:86%;"></div></div>
+                    </div>
+                </div>
+
+                <!-- Frameworks con barras -->
+                <div class="card">
+                    <h2> Frameworks</h2>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>Django</span><span>90%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill orange" style="width:90%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>Flask</span><span>85%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill purple" style="width:85%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>.NET</span><span>80%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>Spring Boot</span><span>70%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill blue" style="width:70%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>React</span><span>75%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill green" style="width:75%;"></div></div>
+                    </div>
+                </div>
+
+                <!-- Bases de datos con barras -->
+                <div class="card">
+                    <h2> Bases de Datos</h2>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>SQL Server</span><span>88%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:88%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>PGadmin / PostgreSQL</span><span>92%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill blue" style="width:92%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>MySQL</span><span>85%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill green" style="width:85%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>SQLite</span><span>80%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill orange" style="width:80%;"></div></div>
+                    </div>
+                    <p style="margin-top:8px; font-size:1.05rem;">Diseño de esquemas, consultas avanzadas, administración, optimización y backups.</p>
+                </div>
+
+                <!-- Herramientas (sin barras, solo badges) -->
+                <div class="card">
+                    <h2> Herramientas &amp; DevOps</h2>
+                    <div>
+                        <span class="skill-badge">Git / GitHub</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Visual Studio</span>
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">Postman</span>
+                        <span class="skill-badge">Linux</span>
+                        <span class="skill-badge">Jira / Trello</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha: Experiencia y Proyectos (con barras de experiencia técnica) -->
+            <div>
+                <!-- Experiencia Práctica con barras de dominio -->
+                <div class="card">
+                    <h2> Experiencia Práctica</h2>
+                    <!-- Barra de dominio en redes -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>Instalación de redes</span><span>85%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill purple" style="width:85%;"></div></div>
+                    </div>
+                    <div class="exp-item">
+                        <span class="date">Prácticas · 2023 – 2024</span>
+                        <p>Diseño e implementación de redes LAN, cableado estructurado, configuración de switches y routers, resolución de problemas de conectividad y documentación de topologías.</p>
+                    </div>
+
+                    <!-- Barra de dominio en mantenimiento -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>Mantenimiento preventivo/correctivo</span><span>90%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill orange" style="width:90%;"></div></div>
+                    </div>
+                    <div class="exp-item">
+                        <span class="date">Prácticas · 2023 – 2024</span>
+                        <p>Diagnóstico y reparación de hardware, limpieza interna, actualización de componentes, optimización de sistemas operativos (Windows/Linux) y gestión de inventario.</p>
+                    </div>
+
+                    <!-- Barra de dominio en bases de datos -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>Administración de bases de datos</span><span>88%</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill blue" style="width:88%;"></div></div>
+                    </div>
+                    <div class="exp-item">
+                        <span class="date">Proyectos académicos y laborales</span>
+                        <p>Diseño de modelos entidad-relación, normalización, consultas SQL complejas (joins, subconsultas), administración con PGadmin, generación de reportes y respaldos.</p>
+                    </div>
+                </div>
+
+                <!-- Proyectos Destacados -->
+                <div class="card">
+                    <h2> Proyectos Destacados</h2>
+                    <p style="font-size:1.05rem; margin-bottom:10px;">Cuento con un amplio portafolio de proyectos, entre los cuales destacan:</p>
+
+                    <div class="project-item">
+                        <p><strong>Sistema de Seguimiento al Egresado</strong></p>
+                        <span class="date">Django · PostgreSQL · Bootstrap</span>
+                        <ul>
+                            <li>Plataforma web para el seguimiento de egresados de una institución educativa.</li>
+                            <li>Módulos de registro, encuestas de empleabilidad, estadísticas y generación de reportes.</li>
+                            <li>Autenticación de usuarios y roles diferenciados (admin, egresado, coordinador).</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <p><strong>Carrito de Compras para Tienda Virtual</strong></p>
+                        <span class="date">Flask · SQLite · JavaScript</span>
+                        <ul>
+                            <li>Aplicación web con carrito de compras, gestión de productos, pedidos y pasarela de pago simulada.</li>
+                            <li>Implementación de sesiones de usuario, API RESTful y frontend dinámico con Vanilla JS.</li>
+                            <li>Panel de administración para gestión de inventario y pedidos.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <p><strong>Alerta de Seguridad Vecinal</strong></p>
+                        <span class="date">.NET · C# · SQL Server · Xamarin (Móvil)</span>
+                        <ul>
+                            <li>Aplicación móvil y web para reportar incidentes de seguridad en tiempo real.</li>
+                            <li>Envío de notificaciones push a usuarios cercanos y a la central de monitoreo.</li>
+                            <li>Mapa interactivo con geolocalización, historial de incidentes y estadísticas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Enfoque profesional y objetivos -->
+                <div class="card">
+                    <h2> Enfoque profesional</h2>
+                    <p style="font-size:1.15rem;">
+                        Me apasiona el <strong>desarrollo full-stack</strong> y la creación de <strong>aplicaciones móviles</strong> 
+                        que generen valor. Disfruto trabajar con <strong>Django, Flask y .NET</strong> para construir backends robustos, 
+                        y me interesa cada vez más la integración de <strong>análisis de datos</strong> y <strong>machine learning</strong> 
+                        en los sistemas que desarrollo. Busco oportunidades que me permitan crecer como profesional, aportar soluciones 
+                        innovadoras y colaborar en equipos con metodologías ágiles.
+                    </p>
+                    <div class="pixel-divider" style="margin:14px 0;"></div>
+                    <div>
+                        <span class="skill-badge" style="border-color:#e94560;">Web</span>
+                        <span class="skill-badge" style="border-color:#e94560;">Móvil</span>
+                        <span class="skill-badge" style="border-color:#e94560;">Full-Stack</span>
+                        <span class="skill-badge" style="border-color:#e94560;">DevOps</span>
+                        <span class="skill-badge" style="border-color:#e94560;">Data Science</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie de contacto -->
+        <div style="margin-top:20px; border-top: 4px solid #2a2a4a; padding-top:16px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+            <div class="info-line">
+                <span class="label">📧 Email</span>
+                <span class="value">leninsuarez207@gmail.com</span>
+            </div>
+            <div class="info-line">
+                <span class="label"> Teléfono</span>
+                <span class="value">+51 904 411 842</span>
+            </div>
+            <div class="info-line">
+                <span class="label"> GitHub</span>
+                <a href="#" class="pixel-link" style="font-size:1rem; padding:4px 14px;">https://github.com/LeninSuarez-pixel</a>
+            </div>
+            <div class="info-line">
+                <span class="label"> LinkedIn</span>
+                <a href="#" class="pixel-link" style="font-size:1rem; padding:4px 14px;">lenin-alfonso</a>
+            </div>
+        </div>
+        <div style="text-align: right; margin-top:12px; font-family: 'Press Start 2P'; font-size:0.5rem; color:#4a4a6a; letter-spacing:1px;">
+            ⚡ CV · Estilo Píxel · Foto interactiva ⚡
+        </div>
+    </div>
+
+    <script>
+        // Lógica para subir la foto de perfil
+        document.getElementById('photoInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const img = document.getElementById('profilePhoto');
+                    const placeholder = document.getElementById('placeholderText');
+                    img.src = event.target.result;
+                    img.style.display = 'block';
+                    placeholder.style.display = 'none';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
